@@ -1,27 +1,19 @@
-import React from 'react';
+import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 import Popular from './components/Popular'
 
-// Component
-// State
-// Lifecylce Methods
-// UI
-
-
-class App extends React.Component{
+class App extends React.Component {
   render() {
     return (
-      <div className = 'container'>
-      <Popular />
+      <div className='container'>
+        <Popular />
       </div>
-      )
+    )
   }
-
 }
 
 ReactDOM.render(
-  <App/>,
+  <App />,
   document.getElementById('app')
-
 )
