@@ -198,4 +198,4 @@ export default class Battle extends React.Component {
       </React.Fragment>
     )
   }
-  }
+}
