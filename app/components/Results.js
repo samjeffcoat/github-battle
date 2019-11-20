@@ -48,15 +48,11 @@ ProfileList.propTypes = {
 }
 
 export default class Results extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      winner: null,
-      loser: null,
-      error: null,
-      loading: true
-    }
+  state = {
+    winner: null,
+    loser: null,
+    error: null,
+    loading: true
   }
   componentDidMount () {
     const { playerOne, playerTwo } = queryString.parse(this.props.location.search)
@@ -112,17 +108,11 @@ export default class Results extends React.Component {
           </Card>
         </div>
         <Link
-          to = '/battle'
+          to='/battle'
           className='btn dark-btn btn-space'>
             Reset
         </Link>
       </React.Fragment>
     )
   }
-}
-
-Results.propTypes = {
-  playerOne: PropTypes.string.isRequired,
-  playerTwo: PropTypes.string.isRequired,
-
 }
